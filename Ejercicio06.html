@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota de parcial y promedio del grupo</title>
+    <script>
+        let nota
+        let contador = 0
+        let promedio
+        let n = 1
+
+        for(i = 0; i < 10; i++ ){
+            nota = Number(prompt("Ingrese la nota del estudiante n° "+ (n++) +": "));
+
+            if(nota >= 0 && nota <= 10 ){
+                contador = contador + nota;
+            }
+            else{
+                alert("El valor ingresado es invalido")
+
+                i = i - 1;
+                n = n - 1;
+            }
+        }
+        promedio = contador / 10;
+        alert("Promedio de las clase: " + promedio)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

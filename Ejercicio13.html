@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuento en compras</title>
+    <script>
+        let compra = Number(prompt("Ingrese el monto de la compra: "))
+        let descuento, total
+
+        if(compra >= 0 && compra <= 500.00){
+            descuento = compra;
+
+            alert("Su compra no aplica descuentos: \n" + compra)
+        }
+        else if(compra > 500.00 && compra <= 1000.00){
+            descuento = compra * 0.05;
+            total = compra - descuento;
+            
+            alert("Su compra tiene un descuento del 5%, el monto a pagar con el descuento es: \n" + total)
+        }
+        else if(compra > 1000.00 && compra <= 7000.00){
+            descuento = compra * 0.11;
+            total = compra - descuento;
+
+            alert("Su compra tiene un descuento del 11%, el monto a pagar con el descuento es: \n" + total)
+        }
+        else if(compra > 7000.00 && compra <= 15000.00){
+            descuento = compra * 0.18;
+            total = compra - descuento;
+
+            alert("Su compra tiene un descuento del 18%, el monto a pagar con el descuento es: \n" + total)
+        }
+        else if(compra >= 15000.01){
+            descuento = compra * 0.25;
+            total = compra - descuento;
+
+            alert("Su compra tiene un descuento del 25%, el monto a pagar con el descuento es: \n" + total)
+        }
+        else{ 
+            alert("El valor ingresado no es valido")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

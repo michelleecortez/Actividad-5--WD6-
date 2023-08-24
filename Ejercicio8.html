@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Enteros</title>
+    <script>
+        let numeros, contador, array = [], a = 1
+        
+        for(let i = 0; i < 3; i++){
+            numeros = prompt("Introduzca 3 numeros enteros: \n" + "n°" + a++)
+        
+        
+        if(numeros % 1 == 0 && numeros != ""){
+            contador = array.push(numeros)
+        }
+        
+        else{
+            alert("EL numero ingresado no es entero")
+            i = i - 1
+            a = a -1
+        }
+        
+        }
+        
+        array.sort(function(a,b){return b - a})
+        alert("El numero mas alto es: " + array[0])
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

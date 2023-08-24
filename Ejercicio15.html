@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        let horas = 12.25
+        let trabajadas = Number(prompt("Ingrese las horas trabajadas: "))
+        let cuenta1, cuenta2, total
+
+        if(trabajadas < 40 && trabajadas > 0){
+            cuenta1 = trabajadas * horas;
+            cuenta2 = cuenta1 * 0.15;
+            total = cuenta1 - cuenta2;
+
+            alert("La sumatoria de horas trabajadas es: " + cuenta1 + "\n El pago correspondiente menos el descuento del deguro social (15%) es: " + total)
+
+        }
+        else if(trabajadas >= 40){
+            cuenta1 = trabajadas * horas;
+            cuenta2 = cuenta1 * 0.0945;
+            total = cuenta1 - cuenta2;
+
+            alert("La sumatoria de horas trabajadas es: " + cuenta1 + "\n El pago correspondiente menos el descuento del deguro social (9.45%) es: " + total)
+        }
+        else{ 
+            alert("El valor ingresado no es valido")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

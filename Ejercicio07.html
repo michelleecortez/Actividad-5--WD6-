@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicación</title>
+    <script>
+        let numeros
+        let memoria = []
+        let total
+        let contador 
+        let a = 1
+
+        for(let i = 0; i < 4; i++){
+            numeros = Number(prompt("Ingrese el número: \n" + "n°" + a++))
+            contador = memoria.push(numeros)
+        }
+
+        total = memoria [0] * memoria [1] * memoria [2] * memoria [3]
+
+        alert("El resultado de la multiplicación es: " + total)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
